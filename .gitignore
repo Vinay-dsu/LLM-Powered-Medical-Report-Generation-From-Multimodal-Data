@@ -1,0 +1,10 @@
+venv/
+__pycache__/
+*.pt
+tests_dataset/
+*.zip
+*.docx
+!Final-Report.pdf
+!Project_Report.docx
+version_4/
+version_5/

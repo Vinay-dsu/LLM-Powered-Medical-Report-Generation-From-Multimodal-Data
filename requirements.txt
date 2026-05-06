@@ -1,0 +1,10 @@
+flask
+torch
+torchvision
+transformers
+Pillow
+numpy
+flask-cors
+protobuf
+sacremoses
+sentencepiece

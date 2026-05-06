@@ -1,0 +1,231 @@
+[
+  {
+    "test": "Test 1: Normal chest X-ray (PA view)",
+    "history": "Routine screening, no symptoms.",
+    "raw_report": "['Findings: PA and lateral views of the chest provided. There is no focal consolidation, effusion, or pneumothorax. The cardiomediastinal silhouette is normal. Imaged osseous structures are intact. No free air below the right hemidiaphragm is seen. Impression: No acute intrathoracic process.'] \ubbf8esareans were performed on the request of Dr. _ _ _. The lungs are well inflated without evidence of focal airspace consolidation to suggest pneumonia. No pleural effusions or pneumothoraces are present. The pulmonary vasculature is not engorged. Mediastinal contours are within normal limits. Heart size is top normal. Multilevel degenerative changes are noted in the thoracic spine with anterior bridging osteophytes. Surgical clips project over the right upper quadrant of the abdomen. A nasogastric tube is seen coursing below the diaphragm with the tip projecting over the expected location of the gastroesophageal junction. This tube should be advanced by 5-10 cm for more optimal positioning. If the desired position is not achieved, then a repeat radiograph should be obtained. NOTIFICATION: Pertinent critical findings were posted into the radiology dashboard for direct communication to the referring provider. ',' Findings 1. Nasogastric tube terminates in the",
+    "findings": [
+      "PA and lateral views of the chest provided.",
+      "There is no focal consolidation, effusion, or pneumothorax.",
+      "The cardiomediastinal silhouette is normal.",
+      "Imaged osseous structures are intact.",
+      "No free air below the right hemidiaphragm is seen."
+    ],
+    "impression": [
+      "No acute intrathoracic process.'] \ubbf8esareans were performed on the request of Dr. [DATE].",
+      "The lungs are well inflated without evidence of focal airspace consolidation to suggest pneumonia.",
+      "No pleural effusions or pneumothoraces are present.",
+      "The pulmonary vasculature is not engorged.",
+      "Mediastinal contours are within normal limits.",
+      "Heart size is top normal.",
+      "Multilevel degenerative changes are noted in the thoracic spine with anterior bridging osteophytes.",
+      "Surgical clips project over the right upper quadrant of the abdomen.",
+      "A nasogastric tube is seen coursing below the diaphragm with the tip projecting over the expected location of the gastroesophageal junction.",
+      "This tube should be advanced by 5-10 cm for more optimal positioning.",
+      "If the desired position is not achieved, then a repeat radiograph should be obtained.",
+      "NOTIFICATION: Pertinent critical findings were posted into the radiology dashboard for direct communication to the referring provider.",
+      "',' Findings 1.",
+      "Nasogastric tube terminates in the."
+    ],
+    "keyword_score": 60.0,
+    "found_keywords": [
+      "normal",
+      "heart",
+      "lung"
+    ],
+    "missing_keywords": [
+      "clear",
+      "unremarkable"
+    ],
+    "report_length": 186,
+    "inference_time": 7.95,
+    "passed": true
+  },
+  {
+    "test": "Test 3: Chest X-ray with no history",
+    "history": "",
+    "raw_report": "['Findings: The lungs are clear without focal consolidation. No pleural effusion or pneumothorax is seen. The cardiac and mediastinal silhouettes are unremarkable. Impression: No acute cardiopulmonary process. NOTIFICATION: These findings were communicated via telephone by Dr. _ _ _ to the ordering physician at 11: 30 a.m. on-_ _.'] \u05b4\uc218\ubc18\u0325 ta \u2154 esareans per day for 5 days. WET READ VERSION (S): Mild pulmonary edema. COMPARISONS: Chest radiographs from _ _ -year-old female with shortness of breath. FINDINGS: PA and lateral views of the chest provided. Lung volumes are low limiting assessment. Allowing for this, there is no focal consolidation, effusion, or pneumothorax. Heart size is normal. Mediastinal contours are normal. Bony structures are intact. No free air below the right hemidiaphragm. Clips are noted in the right upper quadrant of the abdomen consistent with prior cholecystectomy. CONCLUSION: 1. No acute intrathoracic process. 2. Low lung volumes limit assessment. Please refer to subsequent CT scan for further details. IMPRESSION: ', \"Findings: As compared to the previous radiograph, the patient",
+    "findings": [
+      "The lungs are clear without focal consolidation.",
+      "No pleural effusion or pneumothorax is seen.",
+      "The cardiac and mediastinal silhouettes are unremarkable."
+    ],
+    "impression": [
+      "No acute cardiopulmonary process.",
+      "NOTIFICATION: These findings were communicated via telephone by Dr. [DATE] to the ordering physician at 11: 30 a.m.",
+      "on-[NAME].'] \u05b4\uc218\ubc18\u0325 ta \u2154 esareans per day for 5 days.",
+      "WET READ VERSION (S): Mild pulmonary edema.",
+      "COMPARISONS: Chest radiographs from [NAME] -year-old female with shortness of breath.",
+      "FINDINGS: PA and lateral views of the chest provided.",
+      "Lung volumes are low limiting assessment.",
+      "Allowing for this, there is no focal consolidation, effusion, or pneumothorax.",
+      "Heart size is normal.",
+      "Mediastinal contours are normal.",
+      "Bony structures are intact.",
+      "No free air below the right hemidiaphragm.",
+      "Clips are noted in the right upper quadrant of the abdomen consistent with prior cholecystectomy.",
+      "CONCLUSION: 1.",
+      "No acute intrathoracic process.",
+      "2.",
+      "Low lung volumes limit assessment.",
+      "Please refer to subsequent CT scan for further details.",
+      "IMPRESSION: ', \"Findings: As compared to the previous radiograph, the patient."
+    ],
+    "keyword_score": 100.0,
+    "found_keywords": [
+      "heart",
+      "lung",
+      "mediastin"
+    ],
+    "missing_keywords": [],
+    "report_length": 169,
+    "inference_time": 7.51,
+    "passed": true
+  },
+  {
+    "test": "Test 4: Elderly patient check",
+    "history": "78-year-old female with shortness of breath and chronic cough.",
+    "raw_report": "['Findings: The lungs are clear without focal consolidation. No pleural effusion or pneumothorax is seen. The cardiac and mediastinal silhouettes are unremarkable. Impression: No acute cardiopulmonary process.', 'Findings were discussed with Dr. _ _ _ by phone at 3: 30 p.m. on _ _ -the day of the exam. WET READ VERSION # 1 _ _ 6: 31 PM New bibasilar opacities could be due to aspiration or developing infectious pneumonia in the appropriate clinical setting. Recommend follow-up radiographs after treatment to ensure resolution. NOTIFICATION: Pertinent critical findings were posted into the Department of Radiology online critical communications system for direct communication to the referring provider.' s critical results dashboard was placed immediately upon review of the images. There has been no change in the appearance of the chest since the recent study performed earlier the same date. Imaged osseous structures are intact. No free air below the right hemidiaphragm is seen peer reviewed. Degenerative changes are noted throughout the thoracic spine. A surgical anchor is seen projecting over the left humeral head which may be external to the patient. Surgical clips are seen in the upper abdomen. This information was added to the radiology report dashboard.The above",
+    "findings": [
+      "The lungs are clear without focal consolidation.",
+      "No pleural effusion or pneumothorax is seen.",
+      "The cardiac and mediastinal silhouettes are unremarkable."
+    ],
+    "impression": [
+      "No acute cardiopulmonary process.', 'Findings were discussed with Dr. [DATE] by phone at 3: 30 p.m.",
+      "on [NAME] -the day of the exam.",
+      "WET READ VERSION # 1 [NAME] 6: 31 PM New bibasilar opacities could be due to aspiration or developing infectious pneumonia in the appropriate clinical setting.",
+      "Recommend follow-up radiographs after treatment to ensure resolution.",
+      "NOTIFICATION: Pertinent critical findings were posted into the Department of Radiology online critical communications system for direct communication to the referring provider.' s critical results dashboard was placed immediately upon review of the images.",
+      "There has been no change in the appearance of the chest since the recent study performed earlier the same date.",
+      "Imaged osseous structures are intact.",
+      "No free air below the right hemidiaphragm is seen peer reviewed.",
+      "Degenerative changes are noted throughout the thoracic spine.",
+      "A surgical anchor is seen projecting over the left humeral head which may be external to the patient.",
+      "Surgical clips are seen in the upper abdomen.",
+      "This information was added to the radiology report dashboard.The above."
+    ],
+    "keyword_score": 50.0,
+    "found_keywords": [
+      "lung"
+    ],
+    "missing_keywords": [
+      "heart"
+    ],
+    "report_length": 198,
+    "inference_time": 7.62,
+    "passed": true
+  },
+  {
+    "test": "Test 6: Post-surgical follow-up",
+    "history": "Post cardiac surgery follow-up, day 3.",
+    "raw_report": "['Findings: PA and lateral views of the chest provided. There is no focal consolidation, effusion, or pneumothorax. The cardiomediastinal silhouette is normal. Imaged osseous structures are intact. No free air below the right hemidiaphragm is seen. Impression: No acute intrathoracic process.'] \uad6c \u0325 ta \u0325 t \u0325 t uted \u0325 t utes \u0325 t mented \u0325 t Brassicake radiopaque contrast material into the colon for imaging purposes. ', \"Findings: In comparison with the study of _ _ _, there is little change and no evidence of acute cardiopulmonary disease. No pneumonia, vascular congestion, or pleural effusion. Of incidental note is an azygos fissure, of no clinical significance. Cholecystectomy clips are again seen in the right upper quadrant on the frontal view. Mild degenerative changes are seen along the lower thoracic spine as well as mild loss of height of a vertebral body at the thoracolumbar junction. This information was conveyed via telephone to Dr. Alfred Fiducial Clips at 11: 30 a.m. on _ _ 12. Impressions:\",' Findings were discussed by phone with Dr. _ _ B at 10: 45 a.m. On the day of the exam, the",
+    "findings": [
+      "PA and lateral views of the chest provided.",
+      "There is no focal consolidation, effusion, or pneumothorax.",
+      "The cardiomediastinal silhouette is normal.",
+      "Imaged osseous structures are intact.",
+      "No free air below the right hemidiaphragm is seen."
+    ],
+    "impression": [
+      "No acute intrathoracic process.'] \uad6c \u0325 ta \u0325 t \u0325 t uted \u0325 t utes \u0325 t mented \u0325 t Brassicake radiopaque contrast material into the colon for imaging purposes.",
+      "', \"Findings: In comparison with the study of [DATE], there is little change and no evidence of acute cardiopulmonary disease.",
+      "No pneumonia, vascular congestion, or pleural effusion.",
+      "Of incidental note is an azygos fissure, of no clinical significance.",
+      "Cholecystectomy clips are again seen in the right upper quadrant on the frontal view.",
+      "Mild degenerative changes are seen along the lower thoracic spine as well as mild loss of height of a vertebral body at the thoracolumbar junction.",
+      "This information was conveyed via telephone to Dr. Alfred Fiducial Clips at 11: 30 a.m.",
+      "on [NAME] 12.",
+      "Impressions:\",' Findings were discussed by phone with Dr. [NAME] B at 10: 45 a.m.",
+      "On the day of the exam, the."
+    ],
+    "keyword_score": 0.0,
+    "found_keywords": [],
+    "missing_keywords": [
+      "heart",
+      "lung"
+    ],
+    "report_length": 187,
+    "inference_time": 7.48,
+    "passed": false
+  },
+  {
+    "test": "Test 8: Dyspnea workup",
+    "history": "65-year-old female with progressive dyspnea on exertion.",
+    "raw_report": "['Findings: Heart size is normal. Mediastinal and hilar contours are within normal limits. Pulmonary vasculature is not engorged. Lungs are clear. No focal consolidation, pleural effusion or pneumothorax is present. There are no acute osseous abnormalities. Impression: No acute cardiopulmonary abnormality.'] \u00cc\u0325 niming- addendum to the study formatted on _ _ _ at 11: 00 AM, 5 minutes after discovery of the findings. Imaged portions of the lungs are clear without focal consolidation concerning for pneumonia. No pleural effusions or pneumothoraces are seen. The cardiac and mediastinal silhouettes are stable. Mild degenerative changes are noted in the thoracic spine. A right-sided PICC line terminates at the cavoatrial junction. ', \"Findings: Frontal and lateral views of the chest were obtained. The heart is of normal size with normal cardiomediastinal contours. Lung volumes are low, resulting in crowding of bronchovascular structures. Patchy left basilar opacity is likely due to atelectasis; however, early infection cannot be excluded. No definite pleural effusion. No pneumothorax. Osseous structures are unremarkable. No radiopaque foreign body. Surgical clips project over the right upper quadrant of the abdomen",
+    "findings": [
+      "Heart size is normal.",
+      "Mediastinal and hilar contours are within normal limits.",
+      "Pulmonary vasculature is not engorged.",
+      "Lungs are clear.",
+      "No focal consolidation, pleural effusion or pneumothorax is present.",
+      "There are no acute osseous abnormalities."
+    ],
+    "impression": [
+      "No acute cardiopulmonary abnormality.'] \u00cc\u0325 niming- addendum to the study formatted on [DATE] at 11: 00 AM, 5 minutes after discovery of the findings.",
+      "Imaged portions of the lungs are clear without focal consolidation concerning for pneumonia.",
+      "No pleural effusions or pneumothoraces are seen.",
+      "The cardiac and mediastinal silhouettes are stable.",
+      "Mild degenerative changes are noted in the thoracic spine.",
+      "A right-sided PICC line terminates at the cavoatrial junction.",
+      "', \"Findings: Frontal and lateral views of the chest were obtained.",
+      "The heart is of normal size with normal cardiomediastinal contours.",
+      "Lung volumes are low, resulting in crowding of bronchovascular structures.",
+      "Patchy left basilar opacity is likely due to atelectasis; however, early infection cannot be excluded.",
+      "No definite pleural effusion.",
+      "No pneumothorax.",
+      "Osseous structures are unremarkable.",
+      "No radiopaque foreign body.",
+      "Surgical clips project over the right upper quadrant of the abdomen."
+    ],
+    "keyword_score": 100.0,
+    "found_keywords": [
+      "heart",
+      "lung",
+      "size"
+    ],
+    "missing_keywords": [],
+    "report_length": 179,
+    "inference_time": 7.57,
+    "passed": true
+  },
+  {
+    "test": "Test 10: Immunocompromised patient",
+    "history": "40-year-old immunocompromised patient with persistent fever.",
+    "raw_report": "['Findings: The lungs are clear without focal consolidation. No pleural effusion or pneumothorax is seen. The cardiac and mediastinal silhouettes are unremarkable. Impression: No acute cardiopulmonary process.', 'Findings AND Impression Comparison to _ _ _. The lung volumes have decreased. There is no evidence of pneumonia, pulmonary edema or pleural effusions. Normal size of the heart. Normal appearance of the hilar and mediastinal structures.'] \u05b4erarchical% inhabitants of Oaxaca, Mexico, WET READ VERSION (PFI): 1. Low lung volumes. 2. Borderline cardiomegaly. 3. Mild fluid overload but no overt pulmonary edema. 4. Blunting of the left costophrenic angle could be due to a small pleural effusion. 5. No pneumothorax. IMPRESSION: Perhaps borderline cardiomegaly with mild fluid overload. NOTIFICATION: The impression and recommendation above was entered into the Department of Radiology critical communications system for direct communication to the referring provider at 11: 30 a.m. on-site by telephone immediately upon discovery of the findings. 's Critical results were posted to the radiology dashboard for direct notification of the referring physician. COMPARISON: _ _",
+    "findings": [
+      "The lungs are clear without focal consolidation.",
+      "No pleural effusion or pneumothorax is seen.",
+      "The cardiac and mediastinal silhouettes are unremarkable."
+    ],
+    "impression": [
+      "No acute cardiopulmonary process.', 'Findings AND Impression Comparison to [DATE].",
+      "The lung volumes have decreased.",
+      "There is no evidence of pneumonia, pulmonary edema or pleural effusions.",
+      "Normal size of the heart.",
+      "Normal appearance of the hilar and mediastinal structures.'] \u05b4erarchical% inhabitants of Oaxaca, Mexico, WET READ VERSION (PFI): 1.",
+      "Low lung volumes.",
+      "2.",
+      "Borderline cardiomegaly.",
+      "3.",
+      "Mild fluid overload but no overt pulmonary edema.",
+      "4.",
+      "Blunting of the left costophrenic angle could be due to a small pleural effusion.",
+      "5.",
+      "No pneumothorax.",
+      "IMPRESSION: Perhaps borderline cardiomegaly with mild fluid overload.",
+      "NOTIFICATION: The impression and recommendation above was entered into the Department of Radiology critical communications system for direct communication to the referring provider at 11: 30 a.m.",
+      "on-site by telephone immediately upon discovery of the findings.",
+      "'s Critical results were posted to the radiology dashboard for direct notification of the referring physician.",
+      "COMPARISON: [NAME]."
+    ],
+    "keyword_score": 100.0,
+    "found_keywords": [
+      "lung",
+      "heart"
+    ],
+    "missing_keywords": [],
+    "report_length": 170,
+    "inference_time": 7.83,
+    "passed": true
+  }
+]

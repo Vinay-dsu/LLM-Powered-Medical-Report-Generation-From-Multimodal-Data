@@ -1,0 +1,705 @@
+[2K   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m897.5/897.5 kB[0m [31m14.8 MB/s[0m eta [36m0:00:00[0ma [36m0:00:01[0m
+[?25hNLTK data ready.
+2026-02-21 12:39:05.844152: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:477] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+E0000 00:00:1771677546.058796      47 cuda_dnn.cc:8310] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+E0000 00:00:1771677546.114911      47 cuda_blas.cc:1418] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+PyTorch version: 2.6.0+cu124
+AMP API: new (torch.amp)
+All imports successful.
+Device: cuda
+GPU: Tesla T4
+VRAM: 15.6 GB
+Compute capability: 7.5
+Utilities defined.
+Dataset class defined.
+Model classes defined (with CrossAttentionFusion).
+Loading tokenizer...
+Loading ViT...
+Some weights of ViTModel were not initialized from the model checkpoint at /kaggle/input/vit2/transformers/default/1 and are newly initialized: ['embeddings.cls_token', 'embeddings.patch_embeddings.projection.bias', 'embeddings.patch_embeddings.projection.weight', 'embeddings.position_embeddings', 'encoder.layer.0.attention.attention.key.bias', 'encoder.layer.0.attention.attention.key.weight', 'encoder.layer.0.attention.attention.query.bias', 'encoder.layer.0.attention.attention.query.weight', 'encoder.layer.0.attention.attention.value.bias', 'encoder.layer.0.attention.attention.value.weight', 'encoder.layer.0.attention.output.dense.bias', 'encoder.layer.0.attention.output.dense.weight', 'encoder.layer.0.intermediate.dense.bias', 'encoder.layer.0.intermediate.dense.weight', 'encoder.layer.0.layernorm_after.bias', 'encoder.layer.0.layernorm_after.weight', 'encoder.layer.0.layernorm_before.bias', 'encoder.layer.0.layernorm_before.weight', 'encoder.layer.0.output.dense.bias', 'encoder.layer.0.output.dense.weight', 'encoder.layer.1.attention.attention.key.bias', 'encoder.layer.1.attention.attention.key.weight', 'encoder.layer.1.attention.attention.query.bias', 'encoder.layer.1.attention.attention.query.weight', 'encoder.layer.1.attention.attention.value.bias', 'encoder.layer.1.attention.attention.value.weight', 'encoder.layer.1.attention.output.dense.bias', 'encoder.layer.1.attention.output.dense.weight', 'encoder.layer.1.intermediate.dense.bias', 'encoder.layer.1.intermediate.dense.weight', 'encoder.layer.1.layernorm_after.bias', 'encoder.layer.1.layernorm_after.weight', 'encoder.layer.1.layernorm_before.bias', 'encoder.layer.1.layernorm_before.weight', 'encoder.layer.1.output.dense.bias', 'encoder.layer.1.output.dense.weight', 'encoder.layer.10.attention.attention.key.bias', 'encoder.layer.10.attention.attention.key.weight', 'encoder.layer.10.attention.attention.query.bias', 'encoder.layer.10.attention.attention.query.weight', 'encoder.layer.10.attention.attention.value.bias', 'encoder.layer.10.attention.attention.value.weight', 'encoder.layer.10.attention.output.dense.bias', 'encoder.layer.10.attention.output.dense.weight', 'encoder.layer.10.intermediate.dense.bias', 'encoder.layer.10.intermediate.dense.weight', 'encoder.layer.10.layernorm_after.bias', 'encoder.layer.10.layernorm_after.weight', 'encoder.layer.10.layernorm_before.bias', 'encoder.layer.10.layernorm_before.weight', 'encoder.layer.10.output.dense.bias', 'encoder.layer.10.output.dense.weight', 'encoder.layer.11.attention.attention.key.bias', 'encoder.layer.11.attention.attention.key.weight', 'encoder.layer.11.attention.attention.query.bias', 'encoder.layer.11.attention.attention.query.weight', 'encoder.layer.11.attention.attention.value.bias', 'encoder.layer.11.attention.attention.value.weight', 'encoder.layer.11.attention.output.dense.bias', 'encoder.layer.11.attention.output.dense.weight', 'encoder.layer.11.intermediate.dense.bias', 'encoder.layer.11.intermediate.dense.weight', 'encoder.layer.11.layernorm_after.bias', 'encoder.layer.11.layernorm_after.weight', 'encoder.layer.11.layernorm_before.bias', 'encoder.layer.11.layernorm_before.weight', 'encoder.layer.11.output.dense.bias', 'encoder.layer.11.output.dense.weight', 'encoder.layer.2.attention.attention.key.bias', 'encoder.layer.2.attention.attention.key.weight', 'encoder.layer.2.attention.attention.query.bias', 'encoder.layer.2.attention.attention.query.weight', 'encoder.layer.2.attention.attention.value.bias', 'encoder.layer.2.attention.attention.value.weight', 'encoder.layer.2.attention.output.dense.bias', 'encoder.layer.2.attention.output.dense.weight', 'encoder.layer.2.intermediate.dense.bias', 'encoder.layer.2.intermediate.dense.weight', 'encoder.layer.2.layernorm_after.bias', 'encoder.layer.2.layernorm_after.weight', 'encoder.layer.2.layernorm_before.bias', 'encoder.layer.2.layernorm_before.weight', 'encoder.layer.2.output.dense.bias', 'encoder.layer.2.output.dense.weight', 'encoder.layer.3.attention.attention.key.bias', 'encoder.layer.3.attention.attention.key.weight', 'encoder.layer.3.attention.attention.query.bias', 'encoder.layer.3.attention.attention.query.weight', 'encoder.layer.3.attention.attention.value.bias', 'encoder.layer.3.attention.attention.value.weight', 'encoder.layer.3.attention.output.dense.bias', 'encoder.layer.3.attention.output.dense.weight', 'encoder.layer.3.intermediate.dense.bias', 'encoder.layer.3.intermediate.dense.weight', 'encoder.layer.3.layernorm_after.bias', 'encoder.layer.3.layernorm_after.weight', 'encoder.layer.3.layernorm_before.bias', 'encoder.layer.3.layernorm_before.weight', 'encoder.layer.3.output.dense.bias', 'encoder.layer.3.output.dense.weight', 'encoder.layer.4.attention.attention.key.bias', 'encoder.layer.4.attention.attention.key.weight', 'encoder.layer.4.attention.attention.query.bias', 'encoder.layer.4.attention.attention.query.weight', 'encoder.layer.4.attention.attention.value.bias', 'encoder.layer.4.attention.attention.value.weight', 'encoder.layer.4.attention.output.dense.bias', 'encoder.layer.4.attention.output.dense.weight', 'encoder.layer.4.intermediate.dense.bias', 'encoder.layer.4.intermediate.dense.weight', 'encoder.layer.4.layernorm_after.bias', 'encoder.layer.4.layernorm_after.weight', 'encoder.layer.4.layernorm_before.bias', 'encoder.layer.4.layernorm_before.weight', 'encoder.layer.4.output.dense.bias', 'encoder.layer.4.output.dense.weight', 'encoder.layer.5.attention.attention.key.bias', 'encoder.layer.5.attention.attention.key.weight', 'encoder.layer.5.attention.attention.query.bias', 'encoder.layer.5.attention.attention.query.weight', 'encoder.layer.5.attention.attention.value.bias', 'encoder.layer.5.attention.attention.value.weight', 'encoder.layer.5.attention.output.dense.bias', 'encoder.layer.5.attention.output.dense.weight', 'encoder.layer.5.intermediate.dense.bias', 'encoder.layer.5.intermediate.dense.weight', 'encoder.layer.5.layernorm_after.bias', 'encoder.layer.5.layernorm_after.weight', 'encoder.layer.5.layernorm_before.bias', 'encoder.layer.5.layernorm_before.weight', 'encoder.layer.5.output.dense.bias', 'encoder.layer.5.output.dense.weight', 'encoder.layer.6.attention.attention.key.bias', 'encoder.layer.6.attention.attention.key.weight', 'encoder.layer.6.attention.attention.query.bias', 'encoder.layer.6.attention.attention.query.weight', 'encoder.layer.6.attention.attention.value.bias', 'encoder.layer.6.attention.attention.value.weight', 'encoder.layer.6.attention.output.dense.bias', 'encoder.layer.6.attention.output.dense.weight', 'encoder.layer.6.intermediate.dense.bias', 'encoder.layer.6.intermediate.dense.weight', 'encoder.layer.6.layernorm_after.bias', 'encoder.layer.6.layernorm_after.weight', 'encoder.layer.6.layernorm_before.bias', 'encoder.layer.6.layernorm_before.weight', 'encoder.layer.6.output.dense.bias', 'encoder.layer.6.output.dense.weight', 'encoder.layer.7.attention.attention.key.bias', 'encoder.layer.7.attention.attention.key.weight', 'encoder.layer.7.attention.attention.query.bias', 'encoder.layer.7.attention.attention.query.weight', 'encoder.layer.7.attention.attention.value.bias', 'encoder.layer.7.attention.attention.value.weight', 'encoder.layer.7.attention.output.dense.bias', 'encoder.layer.7.attention.output.dense.weight', 'encoder.layer.7.intermediate.dense.bias', 'encoder.layer.7.intermediate.dense.weight', 'encoder.layer.7.layernorm_after.bias', 'encoder.layer.7.layernorm_after.weight', 'encoder.layer.7.layernorm_before.bias', 'encoder.layer.7.layernorm_before.weight', 'encoder.layer.7.output.dense.bias', 'encoder.layer.7.output.dense.weight', 'encoder.layer.8.attention.attention.key.bias', 'encoder.layer.8.attention.attention.key.weight', 'encoder.layer.8.attention.attention.query.bias', 'encoder.layer.8.attention.attention.query.weight', 'encoder.layer.8.attention.attention.value.bias', 'encoder.layer.8.attention.attention.value.weight', 'encoder.layer.8.attention.output.dense.bias', 'encoder.layer.8.attention.output.dense.weight', 'encoder.layer.8.intermediate.dense.bias', 'encoder.layer.8.intermediate.dense.weight', 'encoder.layer.8.layernorm_after.bias', 'encoder.layer.8.layernorm_after.weight', 'encoder.layer.8.layernorm_before.bias', 'encoder.layer.8.layernorm_before.weight', 'encoder.layer.8.output.dense.bias', 'encoder.layer.8.output.dense.weight', 'encoder.layer.9.attention.attention.key.bias', 'encoder.layer.9.attention.attention.key.weight', 'encoder.layer.9.attention.attention.query.bias', 'encoder.layer.9.attention.attention.query.weight', 'encoder.layer.9.attention.attention.value.bias', 'encoder.layer.9.attention.attention.value.weight', 'encoder.layer.9.attention.output.dense.bias', 'encoder.layer.9.attention.output.dense.weight', 'encoder.layer.9.intermediate.dense.bias', 'encoder.layer.9.intermediate.dense.weight', 'encoder.layer.9.layernorm_after.bias', 'encoder.layer.9.layernorm_after.weight', 'encoder.layer.9.layernorm_before.bias', 'encoder.layer.9.layernorm_before.weight', 'encoder.layer.9.output.dense.bias', 'encoder.layer.9.output.dense.weight', 'layernorm.bias', 'layernorm.weight', 'pooler.dense.bias', 'pooler.dense.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Loading BioGPT...
+/usr/local/lib/python3.11/dist-packages/pydantic/_internal/_generate_schema.py:2249: UnsupportedFieldAttributeWarning: The 'repr' attribute with value False was provided to the `Field()` function, which has no effect in the context it was used. 'repr' is field-specific metadata, and can only be attached to a model field using `Annotated` metadata or by assignment. This may have happened because an `Annotated` type alias using the `type` statement was used, or if the `Field()` function was attached to a single member of a union type.
+  warnings.warn(
+/usr/local/lib/python3.11/dist-packages/pydantic/_internal/_generate_schema.py:2249: UnsupportedFieldAttributeWarning: The 'frozen' attribute with value True was provided to the `Field()` function, which has no effect in the context it was used. 'frozen' is field-specific metadata, and can only be attached to a model field using `Annotated` metadata or by assignment. This may have happened because an `Annotated` type alias using the `type` statement was used, or if the `Field()` function was attached to a single member of a union type.
+  warnings.warn(
+Total parameters: 446,536,192
+Trainable parameters: 446,536,192
+Cross-attention parameters: 12,596,224 (new in v4)
+Train: 13500 | Validation: 1500
+Data loaders ready.
+Total optimization steps: 16875
+LR: ViT=1e-05, Projection+CrossAttn=0.0005, BioGPT=2e-05
+Starting training: 10 epochs, early stopping patience = 3
+======================================================================
+
+======================================================================
+EPOCH 1/10
+======================================================================
+Train 1/10:   0%|          | 0/13500 [00:00<?, ?it/s]`use_cache=True` is incompatible with gradient checkpointing`. Setting `use_cache=False`...
+Validating...
+Val 1/10:   0%|          | 0/1500 [00:00<?, ?it/s]Passing a tuple of `past_key_values` is deprecated and will be removed in Transformers v4.58.0. You should pass an instance of `EncoderDecoderCache` instead, e.g. `past_key_values=EncoderDecoderCache.from_legacy_cache(past_key_values)`.
+
+Epoch 1  |  Train: 1.1921  |  Val: 0.4727
+Saved best model -> /kaggle/working/models/vit_biogpt_multimodal_v4/best_multimodal_v4.pt
+
+======================================================================
+EPOCH 2/10
+======================================================================
+Train 2/10:   0%|          | 0/13500 [00:00<?, ?it/s]Validating...
+Val 2/10:   0%|          | 0/1500 [00:00<?, ?it/s]
+Epoch 2  |  Train: 0.4742  |  Val: 0.4406
+Saved best model -> /kaggle/working/models/vit_biogpt_multimodal_v4/best_multimodal_v4.pt
+
+======================================================================
+EPOCH 3/10
+======================================================================
+Train 3/10:   0%|          | 0/13500 [00:00<?, ?it/s]Validating...
+Val 3/10:   0%|          | 0/1500 [00:00<?, ?it/s]
+Epoch 3  |  Train: 0.4347  |  Val: 0.4279
+Saved best model -> /kaggle/working/models/vit_biogpt_multimodal_v4/best_multimodal_v4.pt
+
+======================================================================
+EPOCH 4/10
+======================================================================
+Train 4/10:   0%|          | 0/13500 [00:00<?, ?it/s]Validating...
+Val 4/10:   0%|          | 0/1500 [00:00<?, ?it/s]
+Epoch 4  |  Train: 0.4073  |  Val: 0.4223
+Saved best model -> /kaggle/working/models/vit_biogpt_multimodal_v4/best_multimodal_v4.pt
+
+======================================================================
+EPOCH 5/10
+======================================================================
+Train 5/10:   0%|          | 0/13500 [00:00<?, ?it/s]Validating...
+Val 5/10:   0%|          | 0/1500 [00:00<?, ?it/s]
+Epoch 5  |  Train: 0.3846  |  Val: 0.4196
+Saved best model -> /kaggle/working/models/vit_biogpt_multimodal_v4/best_multimodal_v4.pt
+
+======================================================================
+EPOCH 6/10
+======================================================================
+Train 6/10:   0%|          | 0/13500 [00:00<?, ?it/s]Validating...
+Val 6/10:   0%|          | 0/1500 [00:00<?, ?it/s]
+Epoch 6  |  Train: 0.3652  |  Val: 0.4209
+No improvement (1/3)
+
+======================================================================
+EPOCH 7/10
+======================================================================
+Train 7/10:   0%|          | 0/13500 [00:00<?, ?it/s]Validating...
+Val 7/10:   0%|          | 0/1500 [00:00<?, ?it/s]
+Epoch 7  |  Train: 0.3485  |  Val: 0.4221
+No improvement (2/3)
+
+======================================================================
+EPOCH 8/10
+======================================================================
+Train 8/10:   0%|          | 0/13500 [00:00<?, ?it/s]Validating...
+Val 8/10:   0%|          | 0/1500 [00:00<?, ?it/s]
+Epoch 8  |  Train: 0.3346  |  Val: 0.4249
+No improvement (3/3)
+
+Early stopping triggered at epoch 8!
+
+======================================================================
+Training complete. Best val loss: 0.4196
+======================================================================
+<Figure size 1000x500 with 1 Axes>Training log saved.
+Loaded best checkpoint from /kaggle/working/models/vit_biogpt_multimodal_v4/best_multimodal_v4.pt
+Report generation function defined.
+Report formatter defined.
+Image: /kaggle/input/mimic-cxr-dataset/official_data_iccv_final/files/p10/p10000032/s50414267/02aa804e-bde0afdd-112c0b34-7bc16630-4e384014.jpg
+History: 55-year-old female with cough and mild fever.
+
+Raw model output:
+['Findings: PA and lateral views of the chest provided. There is no focal consolidation, effusion, or pneumothorax. The cardiomediastinal silhouette is normal. Imaged osseous structures are intact. No free air below the right hemidiaphragm is seen. Impression: No acute intrathoracic process. Please note that CT is more sensitive in detecting subtle pulmonary abnormalities.'] adened with 1-2 images per day over the course of 3 days. Dr. _ _ _ was paged at 11: 30 a.m. on _ _ to discuss the findings. WET READ VERSION # 1 _ _ 8: 23 PM Streaky left lower lobe opacity could be due to atelectasis or pneumonia. Recommend follow-up radiographs in 4 weeks after completion of antibiotic therapy to assess for resolution. COMPARISON: None. NOTIFICATION: Pertinent critical findings were posted into the Department of Radiology critical communications system for direct
+
+============================================================
+           CHEST X-RAY RADIOLOGY REPORT
+============================================================
+
+PATIENT INFORMATION:
+  55-year-old female with cough and mild fever.
+
+------------------------------------------------------------
+FINDINGS:
+------------------------------------------------------------
+  1. PA and lateral views of the chest provided.
+  2. There is no focal consolidation, effusion, or pneumothorax.
+  3. The cardiomediastinal silhouette is normal.
+  4. Imaged osseous structures are intact.
+  5. No free air below the right hemidiaphragm is seen.
+
+------------------------------------------------------------
+IMPRESSION:
+------------------------------------------------------------
+  * No acute intrathoracic process.
+  * Please note that CT is more sensitive in detecting subtle pulmonary abnormalities.'] adened with 1-2 images per day over the course of 3 days.
+  * Dr. [DATE] was paged at 11: 30 a.m.
+  * on [NAME] to discuss the findings.
+  * WET READ VERSION # 1 [NAME] 8: 23 PM Streaky left lower lobe opacity could be due to atelectasis or pneumonia.
+  * Recommend follow-up radiographs in 4 weeks after completion of antibiotic therapy to assess for resolution.
+  * COMPARISON: None.
+  * NOTIFICATION: Pertinent critical findings were posted into the Department of Radiology critical communications system for direct.
+
+------------------------------------------------------------
+RECOMMENDATIONS:
+------------------------------------------------------------
+  * Clinical correlation is recommended.
+  * Follow-up imaging may be warranted based on clinical context.
+  * Consult attending physician for treatment decisions.
+
+------------------------------------------------------------
+DISCLAIMER:
+------------------------------------------------------------
+  This report was generated by an AI model (ViT + BioGPT).
+  It is NOT a substitute for professional medical diagnosis.
+  Always consult a qualified radiologist for clinical decisions.
+
+============================================================
+<Figure size 1000x1400 with 1 Axes>Report saved to /kaggle/working/models/vit_biogpt_multimodal_v4/sample_report.png
+Evaluation function defined (BLEU + ROUGE + METEOR).
+
+Evaluating on 100 validation samples...
+Evaluating:   0%|          | 0/100 [00:00<?, ?it/s]
+==================================================
+       EVALUATION RESULTS (v4)
+==================================================
+  BLEU-1      : 0.1991
+  BLEU-2      : 0.1213
+  BLEU-3      : 0.0798
+  BLEU-4      : 0.0551
+  ROUGE1      : 0.3358
+  ROUGE2      : 0.1397
+  ROUGEL      : 0.1957
+  METEOR      : 0.2790
+==================================================
+
+Metrics saved to /kaggle/working/models/vit_biogpt_multimodal_v4/eval_metrics.json
+Generating 10 sample reports from validation set...
+
+======================================================================
+SAMPLE 1: b95ae22d-c9780363-9ac5a714-e868e307-45ae45a3.jpg
+======================================================================
+
+REFERENCE REPORT:
+  ['Findings: AP upright and lateral views of the chest were obtained.  The lungs are clear without focal consolidation, effusion, or pneumothorax.  Widened AP diameter of the chest could be indicative of underlying COPD.  Heart and mediastinal contour appears normal.  Atherosclerotic calcification al...
+
+GENERATED REPORT:
+============================================================
+           CHEST X-RAY RADIOLOGY REPORT
+============================================================
+
+------------------------------------------------------------
+IMPRESSION:
+------------------------------------------------------------
+  * In comparison with the study of [DATE], there is little change and no evidence of acute cardiopulmonary disease.
+  * Cardiac silhouette is within normal limits and there is no vascular congestion, pleural effusion, or acute focal pneumonia.
+  * Of incidental note is an old healed fracture of the mid portion of the right clavicle.', "Findings: PA and lateral views of the chest provided.
+  * Midline sternotomy wires and mediastinal clips are again noted.
+  * The lungs are clear without focal consolidation, large effusion or pneumothorax.
+  * No signs of congestion or edema.
+  * The heart appears top-normal in size.
+  * Mediastinal contour is normal.
+  * Bony structures are intact.
+  * No free air below the right hemidiaphragm.
+  * Clips are noted in the upper abdomen.
+  * Impression as above."] / please assess for interval change since the prior study.
+  * ", 'findings: As compared to the previous radiograph, the patient has received a left pectoral pacemaker.
+
+------------------------------------------------------------
+RECOMMENDATIONS:
+------------------------------------------------------------
+  * Clinical correlation is recommended.
+  * Follow-up imaging may be warranted based on clinical context.
+  * Consult attending physician for treatment decisions.
+
+------------------------------------------------------------
+DISCLAIMER:
+------------------------------------------------------------
+  This report was generated by an AI model (ViT + BioGPT).
+  It is NOT a substitute for professional medical diagnosis.
+  Always consult a qualified radiologist for clinical decisions.
+
+============================================================
+
+======================================================================
+SAMPLE 2: 3527a94c-f1772542-cba49b78-2c171c07-279d3d9a.jpg
+======================================================================
+
+REFERENCE REPORT:
+  ['Findings:  Impression: 1.  COPD and cardiomegaly.  2.  Interval increase in interstitial markings compared with one day earlier, suggestive of CHF with interstitial edema.  3.  Left lower lobe collapse and/or consolidation and small left effusion may be slightly worse.', 'Findings:  Impression: CH...
+
+GENERATED REPORT:
+============================================================
+           CHEST X-RAY RADIOLOGY REPORT
+============================================================
+
+------------------------------------------------------------
+IMPRESSION:
+------------------------------------------------------------
+  * In comparison with the study of [DATE], there is little change and no evidence of acute cardiopulmonary disease.
+  * Cardiac silhouette is within normal limits and there is no vascular congestion, pleural effusion, or acute focal pneumonia.
+  * Of incidental note is an old healed fracture of the mid portion of the right clavicle.', "Findings: PA and lateral views of the chest provided.
+  * Midline sternotomy wires and mediastinal clips are again noted.
+  * The lungs are clear without focal consolidation, large effusion or pneumothorax.
+  * No signs of congestion or edema.
+  * The heart appears top-normal in size.
+  * Mediastinal contour is normal.
+  * Bony structures are intact.
+  * No free air below the right hemidiaphragm.
+  * Clips are noted in the upper abdomen.
+  * Impression as above."] uscript addendum to this wet read was added to the electronic dashboard at 11: 30 a.m.
+  * on day of the exam.
+  * This recommendation was communicated via.
+
+------------------------------------------------------------
+RECOMMENDATIONS:
+------------------------------------------------------------
+  * Clinical correlation is recommended.
+  * Follow-up imaging may be warranted based on clinical context.
+  * Consult attending physician for treatment decisions.
+
+------------------------------------------------------------
+DISCLAIMER:
+------------------------------------------------------------
+  This report was generated by an AI model (ViT + BioGPT).
+  It is NOT a substitute for professional medical diagnosis.
+  Always consult a qualified radiologist for clinical decisions.
+
+============================================================
+
+======================================================================
+SAMPLE 3: 71d256cc-746a5249-956994d0-828a6490-6cb18ff3.jpg
+======================================================================
+
+REFERENCE REPORT:
+  ['Findings:  Impression: No previous images.  There is mild hyperexpansion of the lungs raising the possibility of some chronic pulmonary disease.  No evidence of acute pneumonia, vascular congestion, pleural effusion, or pneumothorax.  No evidence of compression fracture in the dorsal spine.']
+
+GENERATED REPORT:
+============================================================
+           CHEST X-RAY RADIOLOGY REPORT
+============================================================
+
+------------------------------------------------------------
+FINDINGS:
+------------------------------------------------------------
+  1. PA and lateral views of the chest provided.
+  2. There is no focal consolidation, effusion, or pneumothorax.
+  3. The cardiomediastinal silhouette is normal.
+  4. Imaged osseous structures are intact.
+  5. No free air below the right hemidiaphragm is seen.
+
+------------------------------------------------------------
+IMPRESSION:
+------------------------------------------------------------
+  * No acute intrathoracic process.'] adened in quantity but overall similar appearance when compared to the prior study from [DATE].
+  * Please note that the patient's mandible obscures the lower portion of the film.
+  * If there is clinical concern for a rib fracture, dedicated rib series could be obtained.
+  * RECOMMENDATION (S): Please refer to the subsequent CTA chest for further details.
+  * NOTIFICATION: Pertinent critical findings were posted by Dr. [NAME] at 17: 20 on [NAME] 09 to the Department of Radiology online critical communications system for direct communication to the referring provider.
+  * ', "Findings: Heart size is top normal.
+  * Mediastinal and.
+
+------------------------------------------------------------
+RECOMMENDATIONS:
+------------------------------------------------------------
+  * Clinical correlation is recommended.
+  * Follow-up imaging may be warranted based on clinical context.
+  * Consult attending physician for treatment decisions.
+
+------------------------------------------------------------
+DISCLAIMER:
+------------------------------------------------------------
+  This report was generated by an AI model (ViT + BioGPT).
+  It is NOT a substitute for professional medical diagnosis.
+  Always consult a qualified radiologist for clinical decisions.
+
+============================================================
+
+======================================================================
+SAMPLE 4: 0b95578b-62814bd0-de0358fc-f05458c2-5d6806cb.jpg
+======================================================================
+
+REFERENCE REPORT:
+  ['Findings:  Impression: PA and lateral chest compared to ___:  Normal heart, lungs, hila, mediastinum and pleural surfaces.  If there is clinical suspicion of pain originating in the chest cage, then bone detailed views of areas of referable signs and symptoms should be obtained.']
+
+GENERATED REPORT:
+============================================================
+           CHEST X-RAY RADIOLOGY REPORT
+============================================================
+
+------------------------------------------------------------
+FINDINGS:
+------------------------------------------------------------
+  1. PA and lateral views of the chest provided.
+  2. There is no focal consolidation, effusion, or pneumothorax.
+  3. The cardiomediastinal silhouette is normal.
+  4. Imaged osseous structures are intact.
+  5. No free air below the right hemidiaphragm is seen.
+
+------------------------------------------------------------
+IMPRESSION:
+------------------------------------------------------------
+  * No acute intrathoracic process.'] adened in quantity but overall similar appearance to the prior study from [DATE].
+  * Please note that this study was not designed for evaluation of subtle changes at the lung bases.
+  * If there is clinical concern for rib fracture, dedicated rib series could be obtained.
+  * ',' Findings / Impression 1.
+  * Right PICC line tip is at the level of lower SVC.
+  * Heart size and mediastinum are stable.
+  * Lungs are essentially clear.
+  * No pleural effusion or pneumothorax is seen although the extreme left costophrenic angle is excluded from the field of view.
+  * Clinical correlation is advised.
+  * 2.
+  * Bibasilar opacities may represent atelectasis versus aspiration.
+  * Follow.
+
+------------------------------------------------------------
+RECOMMENDATIONS:
+------------------------------------------------------------
+  * Clinical correlation is recommended.
+  * Follow-up imaging may be warranted based on clinical context.
+  * Consult attending physician for treatment decisions.
+
+------------------------------------------------------------
+DISCLAIMER:
+------------------------------------------------------------
+  This report was generated by an AI model (ViT + BioGPT).
+  It is NOT a substitute for professional medical diagnosis.
+  Always consult a qualified radiologist for clinical decisions.
+
+============================================================
+
+======================================================================
+SAMPLE 5: cdf79da0-47f811c8-a9eaca97-b81f0093-d70f4ed7.jpg
+======================================================================
+
+REFERENCE REPORT:
+  ['Findings:  Impression: No evidence of acute cardiopulmonary process.']
+
+GENERATED REPORT:
+============================================================
+           CHEST X-RAY RADIOLOGY REPORT
+============================================================
+
+------------------------------------------------------------
+FINDINGS:
+------------------------------------------------------------
+  1. PA and lateral views of the chest provided.
+  2. There is no focal consolidation, effusion, or pneumothorax.
+  3. The cardiomediastinal silhouette is normal.
+  4. Imaged osseous structures are intact.
+  5. No free air below the right hemidiaphragm is seen.
+
+------------------------------------------------------------
+IMPRESSION:
+------------------------------------------------------------
+  * No acute intrathoracic process.'] adened in quantity but overall similar appearance to the prior study from [DATE].
+  * Please note that this study was not designed for assessment of subtle changes at the lung bases.
+  * If there is clinical concern for rib fracture, dedicated rib series may be helpful.
+  * ',' Findings / Impression 1.
+  * Right internal jugular central line tip is at the level of lower SVC.
+  * Heart size and mediastinum are stable.
+  * Lungs are essentially clear except for minimal linear atelectasis at the left base.
+  * No pleural effusions.
+  * No pneumothorax.
+  * No pulmonary edema.
+  * No displaced rib fractures identified.
+  * RECOMMENDATION (S): Dedicated rib series can be obtained.
+
+------------------------------------------------------------
+RECOMMENDATIONS:
+------------------------------------------------------------
+  * Clinical correlation is recommended.
+  * Follow-up imaging may be warranted based on clinical context.
+  * Consult attending physician for treatment decisions.
+
+------------------------------------------------------------
+DISCLAIMER:
+------------------------------------------------------------
+  This report was generated by an AI model (ViT + BioGPT).
+  It is NOT a substitute for professional medical diagnosis.
+  Always consult a qualified radiologist for clinical decisions.
+
+============================================================
+
+======================================================================
+SAMPLE 6: 65b42bdd-67ef5ec5-dacb571b-69b19d0e-d88b692e.jpg
+======================================================================
+
+REFERENCE REPORT:
+  ['Findings:  Impression: No acute cardiopulmonary process.']
+
+GENERATED REPORT:
+============================================================
+           CHEST X-RAY RADIOLOGY REPORT
+============================================================
+
+------------------------------------------------------------
+FINDINGS:
+------------------------------------------------------------
+  1. PA and lateral views of the chest provided.
+  2. There is no focal consolidation, effusion, or pneumothorax.
+  3. The cardiomediastinal silhouette is normal.
+  4. Imaged osseous structures are intact.
+  5. No free air below the right hemidiaphragm is seen.
+
+------------------------------------------------------------
+IMPRESSION:
+------------------------------------------------------------
+  * No acute intrathoracic process.'] adened in quantity but overall similar appearance to the prior study from [DATE].
+  * Please note that this study was not designed for evaluation of subtle changes at the lung bases.
+  * If there is clinical concern for rib fracture, dedicated rib series could be obtained.
+  * ',' Findings / Impression 1.
+  * Right PICC line tip is at the level of lower SVC.
+  * Heart size and mediastinum are stable.
+  * Lungs are essentially clear except for minimal linear atelectasis at the left base.
+  * No new consolidations demonstrated.
+  * No pulmonary edema.
+  * No pleural effusions.
+  * No pneumothorax.
+  * Overall no significant interval change since the most recent prior study.
+  * RECOMMENDA.
+
+------------------------------------------------------------
+RECOMMENDATIONS:
+------------------------------------------------------------
+  * Clinical correlation is recommended.
+  * Follow-up imaging may be warranted based on clinical context.
+  * Consult attending physician for treatment decisions.
+
+------------------------------------------------------------
+DISCLAIMER:
+------------------------------------------------------------
+  This report was generated by an AI model (ViT + BioGPT).
+  It is NOT a substitute for professional medical diagnosis.
+  Always consult a qualified radiologist for clinical decisions.
+
+============================================================
+
+======================================================================
+SAMPLE 7: 04df8cc6-c43a3a29-e6f481b7-35e8d23b-7fda385e.jpg
+======================================================================
+
+REFERENCE REPORT:
+  ['Findings:  Impression: No previous images. The heart is normal in size and there is no evidence of vascular congestion, pleural effusion, or acute focal pneumonia.', 'Findings: Low lung volumes bilaterally.  Linear and curvilinear densities in the right mid lung reflect mild atelectasis.  No acute...
+
+GENERATED REPORT:
+============================================================
+           CHEST X-RAY RADIOLOGY REPORT
+============================================================
+
+------------------------------------------------------------
+FINDINGS:
+------------------------------------------------------------
+  1. PA and lateral views of the chest provided.
+  2. There is no focal consolidation, effusion, or pneumothorax.
+  3. The cardiomediastinal silhouette is normal.
+  4. Imaged osseous structures are intact.
+  5. No free air below the right hemidiaphragm is seen.
+
+------------------------------------------------------------
+IMPRESSION:
+------------------------------------------------------------
+  * No acute intrathoracic process.'] adened in quantity but overall similar appearance to the prior study from [DATE].
+  * Please note that the patient's mandible obscures the lung apices on the frontal view.
+  * If there is clinical concern for an underlying abnormality, dedicated rib series can be obtained.
+  * ',' Findings 1.
+  * Right-sided Port-A-Cath tip terminates at the junction of the SVC and right atrium.
+  * Cardiac, mediastinal and hilar contours are normal.
+  * Pulmonary vasculature is not engorged.
+  * Lungs are clear without focal consolidation.
+  * No pleural effusion or pneumothorax is present.
+  * No acute osseous abnormality is visualized.
+  * Mild degenerative changes are noted in the thoracic spine.
+
+------------------------------------------------------------
+RECOMMENDATIONS:
+------------------------------------------------------------
+  * Clinical correlation is recommended.
+  * Follow-up imaging may be warranted based on clinical context.
+  * Consult attending physician for treatment decisions.
+
+------------------------------------------------------------
+DISCLAIMER:
+------------------------------------------------------------
+  This report was generated by an AI model (ViT + BioGPT).
+  It is NOT a substitute for professional medical diagnosis.
+  Always consult a qualified radiologist for clinical decisions.
+
+============================================================
+
+======================================================================
+SAMPLE 8: bbed181b-f8ccd03b-50e51ff1-7f2db3d1-8750e158.jpg
+======================================================================
+
+REFERENCE REPORT:
+  ['Findings:  Impression: ', 'Findings: Comparison is made to the prior study performed 13 hours earlier.  There is an endotracheal tube whose tip is 5 cm above the carina, appropriately sited.  There has been removal of the right IJ Cordis.  There is a right-sided PICC line with distal lead tip in t...
+
+GENERATED REPORT:
+============================================================
+           CHEST X-RAY RADIOLOGY REPORT
+============================================================
+
+------------------------------------------------------------
+FINDINGS:
+------------------------------------------------------------
+  1. PA and lateral views of the chest provided.
+  2. There is no focal consolidation, effusion, or pneumothorax.
+  3. The cardiomediastinal silhouette is normal.
+  4. Imaged osseous structures are intact.
+  5. No free air below the right hemidiaphragm is seen.
+
+------------------------------------------------------------
+IMPRESSION:
+------------------------------------------------------------
+  * No acute intrathoracic process.'] adened with 1 minute interval increase in severity of left lower lobe pneumonia.
+  * Dr. [DATE] was paged at 11: 30 a.m.
+  * as soon as the findings were discovered.
+  * ',' Findings / Impression In comparison with the earlier study of this date, there has been placement of a Dobbhoff tube that extends to the distal stomach.
+  * Continued low lung volumes accentuate the transverse diameter of the heart.
+  * Mild indistinctness of pulmonary vessels could reflect some elevated pulmonary venous pressure.
+  * Opacification at the left base is consistent with pleural fluid and atelectatic changes.
+  * Right lung is essentially clear.
+  * NOTIFICATION: Dr.
+
+------------------------------------------------------------
+RECOMMENDATIONS:
+------------------------------------------------------------
+  * Clinical correlation is recommended.
+  * Follow-up imaging may be warranted based on clinical context.
+  * Consult attending physician for treatment decisions.
+
+------------------------------------------------------------
+DISCLAIMER:
+------------------------------------------------------------
+  This report was generated by an AI model (ViT + BioGPT).
+  It is NOT a substitute for professional medical diagnosis.
+  Always consult a qualified radiologist for clinical decisions.
+
+============================================================
+
+======================================================================
+SAMPLE 9: 4e89e5a2-528b92b0-4fe0b27f-6c436a6f-2188ea95.jpg
+======================================================================
+
+REFERENCE REPORT:
+  ['Findings: Frontal and lateral chest radiographs demonstrate well-expanded lungs.  Cardiomediastinal contours are normal.  Lungs are clear.  There is no pleural effusion and no pneumothorax. Tiny linear metallic density projecting over the right breast likely represents a biopsy clip. No definite r...
+
+GENERATED REPORT:
+============================================================
+           CHEST X-RAY RADIOLOGY REPORT
+============================================================
+
+------------------------------------------------------------
+FINDINGS:
+------------------------------------------------------------
+  1. PA and lateral views of the chest provided.
+  2. There is no focal consolidation, effusion, or pneumothorax.
+  3. The cardiomediastinal silhouette is normal.
+  4. Imaged osseous structures are intact.
+  5. No free air below the right hemidiaphragm is seen.
+
+------------------------------------------------------------
+IMPRESSION:
+------------------------------------------------------------
+  * No acute intrathoracic process.'] adened in quantity but overall similar appearance to the prior study from [DATE].
+  * Please note that this study was not designed for evaluation of subtle changes at the lung bases.
+  * If there is clinical concern for rib fracture, dedicated rib series could be obtained.
+  * ',' Findings / Impression 1.
+  * Right PICC line tip is at the level of lower SVC.
+  * Heart size and mediastinum are stable.
+  * Lungs are essentially clear except for minimal linear atelectasis at the left base.
+  * No new consolidations demonstrated.
+  * No pulmonary edema.
+  * No pleural effusions.
+  * No pneumothorax.
+  * No displaced rib fractures identified.
+  * Dedicated rib series can be obtained if there is.
+
+------------------------------------------------------------
+RECOMMENDATIONS:
+------------------------------------------------------------
+  * Clinical correlation is recommended.
+  * Follow-up imaging may be warranted based on clinical context.
+  * Consult attending physician for treatment decisions.
+
+------------------------------------------------------------
+DISCLAIMER:
+------------------------------------------------------------
+  This report was generated by an AI model (ViT + BioGPT).
+  It is NOT a substitute for professional medical diagnosis.
+  Always consult a qualified radiologist for clinical decisions.
+
+============================================================
+
+======================================================================
+SAMPLE 10: 346ea542-35a25eba-c29f4f82-53f81838-29691b81.jpg
+======================================================================
+
+REFERENCE REPORT:
+  ['Findings:  Impression: Mild bibasilar atelectasis.  No evidence of pulmonary edema.']
+
+GENERATED REPORT:
+============================================================
+           CHEST X-RAY RADIOLOGY REPORT
+============================================================
+
+------------------------------------------------------------
+FINDINGS:
+------------------------------------------------------------
+  1. PA and lateral views of the chest provided.
+  2. There is no focal consolidation, effusion, or pneumothorax.
+  3. The cardiomediastinal silhouette is normal.
+  4. Imaged osseous structures are intact.
+  5. No free air below the right hemidiaphragm is seen.
+
+------------------------------------------------------------
+IMPRESSION:
+------------------------------------------------------------
+  * No acute intrathoracic process.'] adened in quantity but overall similar appearance to the prior study from [DATE].
+  * Please note that this study was not designed for assessment of subtle changes at the lung bases.
+  * If there is clinical concern for rib fracture, dedicated rib series could be obtained.
+  * ',' Findings / Impression 1.
+  * Right PICC line tip is at the level of lower SVC.
+  * Heart size and mediastinum are stable.
+  * Lungs are essentially clear except for minimal linear atelectasis at the left base.
+  * No pleural effusion or pneumothorax is present.
+  * No pulmonary edema is demonstrated.
+  * No acute bony abnormality is appreciated.
+  * RECOMMENDATION (S): Dedicated rib series.
+
+------------------------------------------------------------
+RECOMMENDATIONS:
+------------------------------------------------------------
+  * Clinical correlation is recommended.
+  * Follow-up imaging may be warranted based on clinical context.
+  * Consult attending physician for treatment decisions.
+
+------------------------------------------------------------
+DISCLAIMER:
+------------------------------------------------------------
+  This report was generated by an AI model (ViT + BioGPT).
+  It is NOT a substitute for professional medical diagnosis.
+  Always consult a qualified radiologist for clinical decisions.
+
+============================================================
+
+
+Generated reports saved to /kaggle/working/models/vit_biogpt_multimodal_v4/generated_reports.csv
+<Figure size 1200x600 with 1 Axes>Metrics chart saved.
+✅ Created: /kaggle/working/v4_model.zip
+Size: 3264.9 MB
+
+To download: Click the folder icon (📁) on the right sidebar
+→ Navigate to /kaggle/working/ → Click v4_model.zip → Download
+✅ Copied checkpoint to /kaggle/working/best_multimodal_v4.pt
+Size: 1786.4 MB
+
+After notebook finishes:
+1. Go to the notebook page
+2. Click "Output" tab at the top
+3. Download best_multimodal_v4.pt directly
+✅ Created: /kaggle/working/v4_model.zip
+Size: 3264.9 MB
+/kaggle/working/v4_model.zip
